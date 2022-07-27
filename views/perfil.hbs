@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="/css/perfil.css">
+
+<div class="header"></div>
+<div class="body">
+    {{#each perfil}}
+        <div class="grid">
+            <div class="banner" style="background-image: url('{{ this.banner }}');"></div>
+            <div class="grid-author">
+                <div class="avatar" style="background-image: url('https://crafatar.com/avatars/{{ this.minecraftUUID }}.png?overlay');, url('https://crafatar.com/avatars/8667ba71b85a4004af54457a9734eed7.png?overlay')"></div>
+                <div class="grid-info">
+                    <div class="username"><h3>{{ this.minecraftUsername }}</h3></div>
+                    <div class="role" style="background-color: rgb({{ this.roleColor }});"><span>{{ this.minecraftRole }}</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gridNavbar">
+            <ul>
+                <li><a href="/perfil/{{ this.minecraftUsername }}/about">Acerca de</a></li>
+                <li><a href="/perfil/{{ this.minecraftUsername }}/rangos">Rangos</a></li>
+            </ul>
+        </div>
+
+        <div class="gridInfo">
+            <div class="about">
+                <div class="about-title">Acerca de</div>
+                <div class="aboutJoin">Esto esta en mantenimiento...</div>
+            </div>
+            <div class="minecraftInfo">
+                <div class="skin-title">Skin</div>
+                <div class="grid-skinRender">
+                    <div class="skin-render" style="background-image: url('https://crafatar.com/renders/body/{{ this.minecraftUUID }}.png?overlay');, url('https://crafatar.com/renders/body/8667ba71b85a4004af54457a9734eed7.png?overlay')"></div>
+                </div>
+            </div>
+        </div>
+
+    {{/each}}
+</div>

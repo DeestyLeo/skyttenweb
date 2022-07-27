@@ -1,0 +1,99 @@
+<link rel="stylesheet" href="css/home.css">
+
+<div class="header">
+    <div class="header-logo animated">
+        <a href="/">
+            <img src="img/favicon.png" alt="Skytten">
+        </a>
+    </div>
+    <a href="#" class="header-status header-status-left" onclick="return copy('#ip-minecraftServer');" data-ip="play.skytten.tk" data-bs-toggle="tooltip" title data-bs-original-title="¡Click para copiar!">
+        <div class="header-status-icon">
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <div class="header-status-content">
+            <div class="header-status-title">
+                <span id="ip-minecraftServer">play.skytten.tk</span>
+            </div>
+            <div class="header-status-description">
+                <span id="count-minecraftServerPlayers">{{ players }} online</span>
+            </div>
+        </div>
+    </a>
+    <a href="https://discord.skytten.tk" class="header-status header-status-right" data-bs-toggle="tooltip" title data-bs-original-title="¡Click para copiar!">
+        <div class="header-status-icon">
+            <i class="fab fa-discord"></i>
+        </div>
+        <div class="header-status-content">
+            <div class="header-status-title">
+                Servidor de Discord
+            </div>
+            <div class="header-status-description">
+                <span id="count-minecraftServerPlayers">{{ memberCount }} online</span>
+            </div>
+        </div>
+    </a>
+</div>
+
+<div class="body">
+    <div class="anuncios">
+        {{#each anuncios}}
+            <div class="anuncio-grid">
+                <div class="anuncio-grid-title">
+                    <img src="https://minepic.org/avatar/{{ this.author }}" alt="" class="icon {{ this.author }}-icon">
+                    <h4>{{ this.title }}</h4>
+                    <div class="anuncio-author">
+                        <p class="name"><a href="/perfil/DeestyLeoYT">{{ this.author }}</a></p>
+                        <p class="date">· {{ this.date }}</p>
+                    </div>
+                </div>
+                <div class="anuncio-image">
+                    <img src="img/{{ image }}" alt="">
+                </div>
+                <div class="anuncio-description">
+                    <p>{{ this.description }}</p>
+                </div>
+            </div>
+        {{/each}}
+        <div class="more">
+            <a href="/anuncios"><h3>Leer más</h3></a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="body-staff">
+        <div class="staff-title">
+            Staff Online
+        </div>
+        <div class="staff-wrapper">
+            <div class="staff-grid">
+                <div class="staff-name">
+                    No hay staff en línea.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-status">
+        <div class="status-title">
+            Estado del Servidor
+        </div>
+        <div class="status-wrapper">
+            <div class="status-grid">
+                <div class="ip">Ip</div>
+                <div class="ip-content">play.skytten.tk</div>
+            </div>
+            <dl class="status-grid">
+                <dt class="online">En línea</dt>
+                <dd class="online-content">{{ players }}/{{ maxPlayers }}</dd>
+            </dl>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var active = document.getElementById('item-inicio');
+
+    active.setAttribute('id', 'active');
+
+</script>

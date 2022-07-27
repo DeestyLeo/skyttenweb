@@ -1,0 +1,87 @@
+{
+    "deestyleoyt": [
+        {
+            "banner":"../img/panoramic-4.png",
+            "roleColor":"172, 0, 1",
+            "discord": {
+                "id":"701979608421236736",
+                "username":"DeestyLeo",
+                "usertag":"DeestyLeo#1854",
+                "avatarURL":"https://cdn.discordapp.com/avatars/701979608421236736/c94c4fe6a1e1692bf9fb8536b42e3449.png"
+            },
+            "minecraft": {
+                "username":"DeestyLeoYT",
+                "role":"Fundador",
+                "uuid":"f99186c5db52482e965cdcd950a152f5"
+            }
+        }
+    ],
+    "nicki1128": [
+        {
+            "banner":"../img/panoramic-4.png",
+            "roleColor":"172, 0, 1",
+            "discord": {
+                "id":"413780763406761985",
+                "username":"Nicki1128",
+                "usertag":"Nicki1128#4069",
+                "avatarURL":"https://minepic.org/avatar/bunnyboygiorno"
+            },
+            "minecraft": {
+                "username":"Nicki1128",
+                "role":"Fundador",
+                "uuid":"7182d752139549bb9a48148313f68b76"
+            }
+        }
+    ],
+    "brandonyt5k": [
+        {
+            "banner":"../img/panoramic-4.png",
+            "roleColor":"250, 169, 0",
+            "discord": {
+                "id":"447205654847946763",
+                "username":"BrandonYT5K",
+                "usertag":"BrandonYT5K#8829",
+                "avatarURL":"https://minepic.org/avatar/BrandonYT5K"
+            },
+            "minecraft": {
+                "username":"BrandonYT5K",
+                "role":"Manager",
+                "uuid":"43c8f7d767b9464e9ac72462ece06307"
+            }
+        }
+    ],
+    "marlonop": [
+        {
+            "banner":"../img/panoramic-4.png",
+            "roleColor":"255, 195, 83",
+            "discord": {
+                "id":"332985002868604929",
+                "username":"MarlonOP",
+                "usertag":"MarlonOP#3961",
+                "avatarURL":"https://cdn.discordapp.com/avatars/332985002868604929/8369c1dcfc5dc9557cf147350e20f954.png"
+            },
+            "minecraft": {
+                "username":"MarlonOP",
+                "role":"Owner",
+                "uuid":"069a79f444e94726a5befca90e38aaf5"
+            }
+        }
+    ],
+    "catimoco": [
+        {
+            "banner":"../img/panoramic-4.png",
+            "roleColor":"255, 0, 0",
+            "discord": {
+                "id":"528061757365944330",
+                "username":"Catimoco",
+                "usertag":"Catimoco#4699",
+                "avatarURL":"https://cdn.discordapp.com/avatars/528061757365944330/995f25ab5407944b29f72e795cec2af2.png"
+            },
+            "minecraft": {
+                "username":"Catimoco",
+                "role":"Diseñador",
+                "uuid":""
+            }
+        }
+    ]
+}

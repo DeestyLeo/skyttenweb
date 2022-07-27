@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="css/anuncios.css">
+
+<div class="header"></div>
+<div class="body">
+    <div class="anuncios">
+        {{#each anuncios}}
+            <div class="anuncio-grid">
+                <div class="anuncio-grid-title">
+                    <img src="https://minepic.org/avatar/{{ this.author }}" alt="" class="icon {{ this.author }}-icon">
+                    <h3>{{ this.title }}</h3>
+                    <div class="anuncio-author">
+                        <h5 class="name">{{ this.author }}</h5>
+                        <h5 class="date">· {{ this.date }}</h5>
+                    </div>
+                </div>
+                <div class="anuncio-image">
+                    <img src="img/{{ image }}" alt="">
+                </div>
+                <div class="anuncio-description">
+                    {{ this.description }}
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
+
+<script>
+    
+    var active = document.getElementById('item-anuncios');
+
+    active.setAttribute('id', 'active');
+
+</script>

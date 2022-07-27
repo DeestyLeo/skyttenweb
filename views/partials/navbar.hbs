@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/css/navbar.css">
+
+<div id="navbar">
+    <h3 class="title"><a href="/">Skytten</a></h3>
+    <i class="fa-solid fa-bars" onclick="navbarmenu()"></i>
+    <ul id="close" class="list">
+        <li class="list-item"><a class="item item-inicio" id="item-inicio" href="/">Inicio</a></li>
+        <li class="list-item"><a class="item item-anuncios" id="item-anuncios" href="/anuncios">Anuncios</a></li>
+        <li class="list-item"><a class="item item-tienda" id="item-tienda" href="https://tienda.skytten.tk">Tienda</a></li>
+        <li class="list-item"><a class="item item-sanciones" id="item-sanciones" href="/sanciones">Sanciones</a></li>
+        <li class="list-item"><a class="item item-staff" id="item-staff" href="/staff">Staff</a></li>
+    </ul>
+</div>
+
+<a id="boxUp" href="#"><i class="fa-solid fa-angle-up"></i></a>
+
+<script>
+    navbarmenu = function(){
+      var menu = document.getElementById("close");
+      var menuopen = document.getElementById("open");
+
+      if(menu){
+        menu.setAttribute("id", "open");
+      }else{
+        menuopen.setAttribute("id", "close");
+      }
+
+    }
+</script>

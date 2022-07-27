@@ -1,0 +1,146 @@
+.footer, .copy {
+    max-width: 100%;
+    background-color: rgb(58, 61, 66);
+    padding: 1rem;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+.footer-grid {
+    margin-left: 2rem;
+    width: 20rem;
+    border-left: 1px solid gray;
+}
+.borderoff {
+    border-left: transparent;
+}
+.footer-grid p, .footer-grid a {
+    color: gray;
+}
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nosotros img {
+    height: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+    position: relative;
+    left: -1rem;
+}
+.nosotros img:hover {
+    -webkit-filter: none;
+    filter: none;
+}
+.enlaces {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.enlaces a {
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    transition: all 0.2s ease;
+}
+.enlaces a:hover {
+    background-color: gray;
+    padding-left: 1rem;
+    color: white;
+}
+.apoyanos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+.apoyanos a {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    max-width: 80%;
+    background: rgb(234, 198, 20);
+    border-radius: 0.8rem;
+    transition: all 0.2s ease;
+}
+.apoyanos a:hover {
+    opacity: 0.8;
+}
+.copy-grid {
+    position: relative;
+    margin: 3rem;
+    margin-bottom: 0;
+    width: 90%;
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+}
+.redes {
+    display: flex;
+    align-items: center;
+}
+.redes a {
+    margin-left: 0.8rem;
+    font-size: x-large;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    width: 1.5rem;
+    border-radius: 0.8rem;
+    background: rgb(57, 57, 57);
+    color: gray;
+    transition: all 0.2s ease;
+}
+
+/* Redes */
+.fa-heart:hover, .DeestyLeo:hover {
+    color: red;
+    transition: all 0.2s ease;
+}
+.twitter:hover {
+    color: rgb(28, 153, 230);
+}
+.tiktok:hover {
+    color: rgb(255, 255, 255);
+}
+.youtube:hover {
+    color: rgb(255, 0, 0);
+}
+.instagram:hover {
+    color: #f09433; 
+}
+
+/* Responsive */
+@media screen and (max-width: 900px){
+    .footer, .copy{
+        flex-direction: column;
+        padding: 0;
+    }
+    .copy-grid {
+        width: 100%;
+        margin: 0;
+    }
+    .copy-texto {
+        margin-left: 1rem;
+    }
+    .footer-grid {
+        margin-left: 0;
+        border: none;
+    }
+    .nosotros img {
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: -10rem;
+    }
+    .nosotros, .enlaces, .apoyanos {
+        padding: 0;
+        margin-left: 1rem;
+    }
+    .apoyanos {
+        margin-bottom: 2rem;
+    }
+}
